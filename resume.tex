@@ -1,0 +1,248 @@
+% -*- coding: utf-8 -*-
+%-------------------------
+% Resume in Latex
+% Author : Jing Wan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\usepackage[UTF8]{ctex} %for latex
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{Source Han Serif CN}
+%\input{glyphtounicode} %for latex
+\XeTeXgenerateactualtext=1
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1 %for latex
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\setlength{\footskip}{5pt}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mark Wan (万晶)} \\ \vspace{1pt}
+    \small 156-0198-1011 $|$ \href{mailto:wanjingjjj@gmail.com}{\underline{wanjingjjj@gmail.com}} $|$ 
+    \href{https://github.com/wanjingjjj}{\underline{github.com/wanjingjjj}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shanghai Jiaotong University}{Shanghai}
+      {Bachelor of Biology}{Sep. 2003 -- Jun. 2007}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Sr. Staff Engineer(L26)}{Nov. 2020 -- Present}
+      {Adevinta (ebay classifieds group)}{Shanghai}
+      \resumeItemListStart
+        \resumeItem{Design the data platform on \emph{AWS} to onboard \emph{ebay classifieds group} DWH which was running in on-premise datacenter.}
+		\resumeItem{Maintain and support DWH operation on daily basis.}
+        \resumeItem{Developed a data warehouse health monitoring framework to monitor and score the whole DWH platform to improve operation model.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Data Engineering Manager}{Sep. 2018 -- Oct. 2020}
+      {CraiditX}{Shanghai}
+      \resumeItemListStart
+        \resumeItem{Lead the team on developing the data product for bank customers.}
+        \resumeItem{On site deploy data product on customer's on-premise infrastructure.} 
+        \resumeItem{Coordination on people resource and communication between multiple projects.}
+      \resumeItemListEnd
+
+      \resumeSubSubheading
+          {Sr. Data Engineer}{Jun. 2015 -- Aug. 2018}
+          \resumeItemListStart
+          \resumeItem{Created the data warehouse platform from scratch by using airflow and CDH on \emph{AWS}.}
+          \resumeItem{Created an unified data log service to collect data from site application.}
+          \resumeItem{Created BI dashboard by using Superset. BU also have the flexibility to explore and create new report by self-service.}
+          \resumeItem{Transform data and generate features for machine learning data model applications.}
+          \resumeItemListEnd
+      
+    \resumeSubheading
+      {Sr. Software Engineer(L24)}{Mar. 2011 -- May. 2015}
+      {ebay}{Shanghai}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained billing analytic data pipelines using \emph{UC4(Appworx)} and \emph{SAS}.}
+        \resumeItem{Maintain and batch support on bi-monthly ebay billing run.}
+        \resumeItem{Developed self-service tools to help BU to retrieve data from billing system.}
+        \resumeItem{Automated workflow for billing operations.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ETL Engineer}{Sep. 2010 -- Mar. 2011}
+      {Alibaba Group}{Hangzhou}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained data warehouse platform for \emph{Ali-Finance}.}
+        \resumeItem{Created data pipelines to generate features for online credit loan AI model.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {DW Developer}{Jul. 2007 -- Sep. 2010}
+      {ebay (dx solution contractor)}{Shanghai}
+      \resumeItemListStart
+        \resumeItem{Build ETL process on \emph{ebay} Teradata platform.}
+        \resumeItem{SQL tunning and batch support on data warehouse data pipelines.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{DWH Migration} $|$ \emph{AWS(EMR, EKS), Airflow, Kubernetes, Python}}{Jun. 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Use EKS as the foundation of the infrastructure, airflow as the workflow orchestration engine, EMR as the main process engine.}
+            \resumeItem{Created base docker image containing all of the tool chains and ETL handlers, which provided as the default run time of the all ETL jobs.}
+            \resumeItem{Design and implement the CI/CD service for the new platform.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{DWH health monitoring} $|$ \emph{Prometheus, Grafana, Python}}{Oct. 2020 -- Present}
+          \resumeItemListStart
+            \resumeItem{Design and collect the metrics on the overall DWH platform. The metrics can be categorized as data sources, processing and targets. The metrics were collected by Near real time(1min).}
+			\resumeItem{Generate scores with predefined rules from these metrics, which could be used as the health index of the DWH platform.}
+			\resumeItem{Create dashboard and alert based on the metrics.}
+          \resumeItemListEnd
+	   \resumeProjectHeading
+		   {\textbf{AI Data Service} $|$ \emph{Python, Go, CDH(Hive), Java}}{Jun. 2016 -- Aug. 2018}
+          \resumeItemListStart
+            \resumeItem{Use Python / Go to build backend data service to serve the online ML model.}
+			\resumeItem{Create data logging service to capture the intermedia and final result from ML model, which will be stored on Hadoop.}
+			\resumeItem{Process the data from log, along with other sources offline on Hadoop using hive.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL (SparkSQL / Hive), Go, Java, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: Spark, Hadoop, Flask, pandas, Matplotlib, Airflow, Argoflow, React, Beego, Springboot } \\
+     \textbf{Developer Tools}{: Git, Kubernetes, Docker, AWS} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

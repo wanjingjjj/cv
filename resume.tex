@@ -142,9 +142,9 @@
       {Sr. Staff Engineer(L26)}{Nov. 2020 -- Present}
       {Adevinta (ebay classifieds group)}{Shanghai}
       \resumeItemListStart
-        \resumeItem{Design the data platform on \emph{AWS} to onboard \emph{ebay classifieds group} DWH which was running in on-premise datacenter.}
-		\resumeItem{Maintain and support DWH operation on daily basis.}
-        \resumeItem{Developed a data warehouse health monitoring framework to monitor and score the whole DWH platform to improve operation model.}
+        \resumeItem{Design and maintain the data platform based on Airflow and Spark running on \emph{EKS}.}
+	\resumeItem{Develop and maintain in house Spark version with \emph{AWS} glue, delta.io, multi-arch, and cloud native support.}
+        \resumeItem{Lead and develop in house Notebook solution using \emph{React} and \emph{go} based on Jupyter and VSCode.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -209,25 +209,26 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{DWH Migration} $|$ \emph{AWS(EMR, EKS), Airflow, Kubernetes, Python}}{Jun. 2021 -- Present}
+          {\textbf{Notebook Scheduling} $|$ \emph{AWS(EKS), Kubernetes, Argo Workflow, React, Go}}{Jul. 2023 -- Jun. 2024}
           \resumeItemListStart
-            \resumeItem{Use EKS as the foundation of the infrastructure, airflow as the workflow orchestration engine, EMR as the main process engine.}
+            \resumeItem{Use \emph{Argo Workflow} to run jupyter notebook files recurrently.}
+            \resumeItem{Use \emph{kubernetes operator} to store and manage the schedules.}
+            \resumeItem{Web interface provided to let the user manage all the schedules.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{DWH Migration} $|$ \emph{AWS(EKS, S3, Glue), Airflow, Spark, Kubernetes, Python}}{Jun. 2021 -- Jun. 2023}
+          \resumeItemListStart
+            \resumeItem{Use EKS as the foundation of the infrastructure, Airflow as the workflow orchestration engine, Spark as the main process engine. All services are cloud native.}
             \resumeItem{Created base docker image containing all of the tool chains and ETL handlers, which provided as the default run time of the all ETL jobs.}
+            \resumeItem{Created Spark image with patches to connect to \emph{AWS Glue} as hive metastore. All }
             \resumeItem{Design and implement the CI/CD service for the new platform.}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{DWH health monitoring} $|$ \emph{Prometheus, Grafana, Python}}{Oct. 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Design and collect the metrics on the overall DWH platform. The metrics can be categorized as data sources, processing and targets. The metrics were collected by Near real time(1min).}
-			\resumeItem{Generate scores with predefined rules from these metrics, which could be used as the health index of the DWH platform.}
-			\resumeItem{Create dashboard and alert based on the metrics.}
-          \resumeItemListEnd
-	   \resumeProjectHeading
-		   {\textbf{AI Data Service} $|$ \emph{Python, Go, CDH(Hive), Java}}{Jun. 2016 -- Aug. 2018}
+          {\textbf{AI Data Service} $|$ \emph{Python, Go, CDH(Hive), Java}}{Jun. 2016 -- Aug. 2018}
           \resumeItemListStart
             \resumeItem{Use Python / Go to build backend data service to serve the online ML model.}
-			\resumeItem{Create data logging service to capture the intermedia and final result from ML model, which will be stored on Hadoop.}
-			\resumeItem{Process the data from log, along with other sources offline on Hadoop using hive.}
+            \resumeItem{Create data logging service to capture the intermedia and final result from ML model, which will be stored on Hadoop.}
+            \resumeItem{Process the data from log, along with other sources offline on Hadoop using hive.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -239,7 +240,7 @@
     \small{\item{
      \textbf{Languages}{: Python, SQL (SparkSQL / Hive), Go, Java, JavaScript, HTML/CSS} \\
      \textbf{Frameworks}{: Spark, Hadoop, Flask, pandas, Matplotlib, Airflow, Argoflow, React, Beego, Springboot } \\
-     \textbf{Developer Tools}{: Git, Kubernetes, Docker, AWS} \\
+     \textbf{Developer Tools}{: Git, Kubernetes (EKS), Docker, AWS, Datadog, Grafana} \\
     }}
  \end{itemize}
 

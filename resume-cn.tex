@@ -1,0 +1,248 @@
+% -*- coding: utf-8 -*-
+%-------------------------
+% Resume in Latex
+% Author : Jing Wan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+%\usepackage[UTF8]{ctex} %for latex
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{Source Han Serif CN}
+%\input{glyphtounicode} %for latex
+\XeTeXgenerateactualtext=1
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+%\pdfgentounicode=1 %for latex
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\setlength{\footskip}{5pt}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape 万晶} \\ \vspace{1pt}
+    \small 156-0198-1011 $|$ \href{mailto:wanjingjjj@gmail.com}{\underline{wanjingjjj@gmail.com}} $|$ 
+    \href{https://github.com/wanjingjjj}{\underline{github.com/wanjingjjj}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{教育背景}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {上海交通大学}{上海}
+      {生物技术理学学士}{2003年9月 -- 2007年6月}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{工作经历}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Adevinta (ebay classifieds group)}{上海}
+      {资深软件工程师(L26)}{2020年11月 -- 现在}
+      \resumeItemListStart
+      \resumeItem{设计开发基于Airflow和Spark的数据平台，使用云原生技术运行于\emph{EKS}。}
+      \resumeItem{开发维护内部的Spark版本，基于开源社区项目，在此基础上添加了对\emph{AWS} glue, delta.io, Arm架构和云原生的支持。}
+      \resumeItem{基于开源Jupyter和VSCode开发内部的Notebook工具，用于数据分析与机器学习开发。前端基于\emph{React}后端基于\emph{go}。}
+      \resumeItem{定期复查与优化\emph{AWS}资源使用成本，保证资源能够充分合理的使用。}
+       \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {氪信科技}{上海}
+      {数据开发部经理}{2018年9月 -- 2020年10月}
+      \resumeItemListStart
+        \resumeItem{带领团队开发数据产品，主要服务于银行客户。}
+        \resumeItem{客户自建数据中心架构上的数据产品部署与维护。} 
+        \resumeItem{沟通与协调多个实施项目的人员与技术方案。}
+      \resumeItemListEnd
+
+      \resumeSubSubheading
+          {高级数据工程师}{2015年6月 -- 2018年8月}
+          \resumeItemListStart
+          \resumeItem{在 \emph{AWS} 云上从头搭建基于基于\emph{Airflow} 和 \emph{CDH} 的数据仓库平台。}
+          \resumeItem{维护开发统一日志采集服务。}
+          \resumeItem{创建基于 \emph{Superset} 的BI报表服务。销售与分析人员可自助式浏览与创建数据报表。}
+          \resumeItem{为机器学习模型处理数据与开发特征指标。}
+          \resumeItemListEnd
+
+    \resumeSubheading
+      {ebay}{上海}
+      {高级软件工程师(L24)}{2011年3月 -- 2015年5月}
+      \resumeItemListStart
+        \resumeItem{使用 \emph{UC4(Appworx)} 和 \emph{SAS} 开发维护账务数据分析批处理作业。}
+        \resumeItem{开发内部自助工具以帮助销售与客服更方便的获取账务数据。}
+        \resumeItem{自动化某些账户流程。}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {阿里巴巴集团}{杭州}
+      {ETL工程师}{2010年9月 -- 2011年3月}
+      \resumeItemListStart
+        \resumeItem{开发维护\emph{阿里金融}数据仓库平台。}
+        \resumeItem{为在线小微贷款机器学习模型创建数据流程，开发数据指标特征。}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ebay (诚归计算机)}{上海}
+      {数据仓库工程师}{2007年7月 -- 2010年9月}
+      \resumeItemListStart
+        \resumeItem{在 \emph{ebay Teradata} 平台上开发 \emph{ETL} 流程。}
+        \resumeItem{数据批处理作业的 \emph{SQL} 调优与问题解决。}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{项目}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Notebook 作业调度} $|$ \emph{AWS(EKS), Kubernetes, Argo Workflow, React, Go}}{2023年7月 -- 2024年6月}
+          \resumeItemListStart
+            \resumeItem{使用 \emph{Argo Workflow} 定时调度 \emph{jupyter notebook} 文件。}
+            \resumeItem{使用 \emph{kubernetes operator} 存储与管理调度定义。}
+            \resumeItem{基于 \emph{React} 的前端网页界面供用户管理所有的调度任务。}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{数据仓库上云} $|$ \emph{AWS(EKS, S3, Glue), Airflow, Spark, Kubernetes, Python}}{2021年6月 -- 2023年6月}
+          \resumeItemListStart
+            \resumeItem{使用 \emph{EKS} 做为基础架构, \emph{Airflow} 做为流程编排引擎, \emph{Spark} 做为数据处理引擎。所有的服务都为云原生。}
+            \resumeItem{创建包含所有工具链与ETL框架的 \emph{Docker} 镜像，提供所有 \emph{ETL} 作业的运行时。}
+            \resumeItem{创建包含补丁可以 \emph{AWS Glue} 做为 Hive 元数据的 \emph{Spark} 镜像。}
+            \resumeItem{从现有 \emph{ebay} 数据平台迁移超过100个数据流程到新平台。}
+            \resumeItem{为新平台设计与创建持续集成与持续发布流程。}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AI 数据服务} $|$ \emph{Python, Go, CDH(Hive), Java}}{2016年6月 -- 2018年8月}
+          \resumeItemListStart
+            \resumeItem{使用 \emph{Python} 和 \emph{Go} 创建后端数据服务，供在线机器学习模型调用。}
+            \resumeItem{统一数据采集服务将机器学习模型的中间过程与最终结果保存到 \emph{Hadoop}。}
+            \resumeItem{使用 \emph{Hive} 将采集的日志数据与其他数据做处理，供分析模型迭代使用。}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{技术栈}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{语言}{: Python, SQL (SparkSQL / Hive), Go, Java, JavaScript, HTML/CSS} \\
+     \textbf{框架}{: Spark, Hadoop, Flask, pandas, Matplotlib, Airflow, Argoflow, React, Beego, Springboot } \\
+     \textbf{开发工具}{: Git, Kubernetes (EKS), Docker, AWS, Terraform, Datadog, Grafana} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

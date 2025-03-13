@@ -22,7 +22,7 @@
 %\usepackage[UTF8]{ctex} %for latex
 \usepackage{fontspec}
 \usepackage{xeCJK}
-\setCJKmainfont{Source Han Serif CN}
+\setCJKmainfont[BoldFont=STZhongsong,ItalicFont=STFangsong]{STSong}
 %\input{glyphtounicode} %for latex
 \XeTeXgenerateactualtext=1
 
@@ -137,14 +137,22 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mercury Insurance}{Shanghai}
+      {Staff Software Engineer}{Jan. 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Design and implement ML platform based on the needed from user needs across departments.}
+        \resumeItem{Optimize existing \emph{Sagemaker} endpoint.}
+        \resumeItem{Reduce the model time to market and optimize the ML life cycle including model development, feature engineering, model deployment.}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Adevinta (ebay classifieds group)}{Shanghai}
-      {Sr. Staff Engineer(L26)}{Nov. 2020 -- Present}
+      {Sr. Staff Engineer(L26)}{Nov. 2020 -- Dec. 2024}
       \resumeItemListStart
         \resumeItem{Design and maintain the data platform based on Airflow and Spark running on \emph{EKS}.}
 	\resumeItem{Develop and maintain in house Spark version with \emph{AWS} glue, delta.io, multi-arch, and cloud native support.}
-        \resumeItem{Lead and develop in house Notebook solution using \emph{React} and \emph{go} based on Jupyter and VSCode.}
+        \resumeItem{Lead and develop in house ML Notebook solution using \emph{React} and \emph{go} based on Jupyter and VSCode.}
         \resumeItem{Review and optimize the \emph{AWS} cloud cost to meet the budget.}
       \resumeItemListEnd
       
@@ -210,6 +218,12 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+          {\textbf{ML Platform} $|$ \emph{AWS(EKS), kubernetes, feast, mlflow, kubeflow, kserving}}{Jan. 2025 -- Present}
+          \resumeItemListStart
+          \resumeItem{Deploy \emph{feast} on \emph{EKS} to manage features for models. Enable the capability to support both batch offline and online serving.}
+          \resumeItem{Deploy \emph{MLFlow} on \emph{EKS} to track model experiment and model registry.}
+          \resumeItemListEnd
+      \resumeProjectHeading
           {\textbf{Notebook Scheduling} $|$ \emph{AWS(EKS), Kubernetes, Argo Workflow, React, Go}}{Jul. 2023 -- Jun. 2024}
           \resumeItemListStart
             \resumeItem{Use \emph{Argo Workflow} to run jupyter notebook files recurrently.}
@@ -241,7 +255,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Languages}{: Python, SQL (SparkSQL / Hive), Go, Java, JavaScript, HTML/CSS} \\
-     \textbf{Frameworks}{: Spark, Hadoop, Flask, pandas, Matplotlib, Airflow, Argoflow, React, Beego, Springboot } \\
+     \textbf{Frameworks}{: Spark, Hadoop, Flask, pandas, Matplotlib, Airflow, Argoflow, React, Beego, Springboot, feast, mlflow } \\
      \textbf{Developer Tools}{: Git, Kubernetes (EKS), Docker, AWS, Terraform, Datadog, Grafana} \\
     }}
  \end{itemize}

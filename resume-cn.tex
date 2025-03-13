@@ -22,7 +22,7 @@
 %\usepackage[UTF8]{ctex} %for latex
 \usepackage{fontspec}
 \usepackage{xeCJK}
-\setCJKmainfont{Source Han Serif CN}
+\setCJKmainfont[BoldFont=STZhongsong,ItalicFont=STFangsong]{STSong}
 %\input{glyphtounicode} %for latex
 \XeTeXgenerateactualtext=1
 
@@ -139,8 +139,17 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
+      {Mercury Insurance}{上海}
+      {资深软件工程师}{2025年1月至今}
+      \resumeItemListStart
+        \resumeItem{基于跨部门的用户需求设计开发机器学习平台。}
+        \resumeItem{优化部署于 \emph{Sagemaker} 上的机器学习模型。}
+        \resumeItem{优化机器学习模型生命全周期，缩短包含模型开发，特征加工和模型发布的全流程，加快业务迭代速度。}
+      \resumeItemListEnd
+
+    \resumeSubheading
       {Adevinta (ebay classifieds group)}{上海}
-      {资深软件工程师(L26)}{2020年11月至今}
+      {资深软件工程师(L26)}{2020年11月 -- 2024年12月}
       \resumeItemListStart
       \resumeItem{设计开发基于Airflow和Spark的数据平台，使用云原生技术运行于\emph{EKS}。}
       \resumeItem{开发维护内部的Spark版本，基于开源社区项目，添加对\emph{AWS} glue, delta.io, Arm架构和云原生的支持。}
@@ -207,12 +216,20 @@
 \section{项目}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+          {\textbf{机器学习平台} $|$ \emph{AWS(EKS), kubernetes, feast, mlflow, kubeflow, kserving}}{2025年1月至今}
+          \resumeItemListStart
+          \resumeItem{在 \emph{EKS} 上部署 \emph{feast} 管理机器学习指标。提供批量离线与在线指标服务。}
+          \resumeItem{在 \emph{EKS} 上部署 \emph{MLFlow} 管理模型实验与 artifact，版本。}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
           {\textbf{Notebook 作业调度} $|$ \emph{AWS(EKS), Kubernetes, Argo Workflow, React, Go}}{2023年7月 -- 2024年6月}
           \resumeItemListStart
             \resumeItem{使用 \emph{Argo Workflow} 定时调度 \emph{jupyter notebook} 文件。}
             \resumeItem{使用 \emph{kubernetes operator} 存储与管理调度定义。}
             \resumeItem{基于 \emph{React} 的前端网页界面，可供用户管理所有调度任务。}
           \resumeItemListEnd
+
       \resumeProjectHeading
           {\textbf{数据仓库上云} $|$ \emph{AWS(EKS, S3, Glue), Airflow, Spark, Kubernetes, Python}}{2021年6月 -- 2023年6月}
           \resumeItemListStart
@@ -222,6 +239,7 @@
             \resumeItem{从原 \emph{ebay} 数据平台迁移超过100个数据流程到新平台。}
             \resumeItem{为新平台设计与创建持续集成与持续发布流程。}
           \resumeItemListEnd
+
       \resumeProjectHeading
           {\textbf{AI 数据服务} $|$ \emph{Python, Go, CDH(Hive), Java}}{2016年6月 -- 2018年8月}
           \resumeItemListStart
@@ -238,7 +256,7 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{语言}{: Python, SQL (SparkSQL / Hive), Go, Java, JavaScript, HTML/CSS} \\
-     \textbf{框架}{: Spark, Hadoop, Flask, pandas, Matplotlib, Airflow, Argoflow, React, Beego, Springboot } \\
+     \textbf{框架}{: Spark, Hadoop, Flask, pandas, Matplotlib, Airflow, Argoflow, React, Beego, Springboot, Feast, MLFlow } \\
      \textbf{开发工具}{: Git, Kubernetes (EKS), Docker, AWS, Terraform, Datadog, Grafana} \\
     }}
  \end{itemize}
